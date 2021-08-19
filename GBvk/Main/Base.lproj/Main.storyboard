@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="44" width="390" height="766"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eod-Gv-gJb">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="766"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="491"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoVK" translatesAutoresizingMaskIntoConstraints="NO" id="WwU-dr-F62">
                                                 <rect key="frame" x="75" y="26" width="240" height="128"/>
@@ -29,8 +29,8 @@
                                                     <constraint firstAttribute="width" constant="240" id="roW-aR-Mi6"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мобильная версия поможет Вам оставаться ВКонтакте, даже если Вы далеко от компьютера." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfa-Hb-1lW">
-                                                <rect key="frame" x="15.666666666666686" y="180" width="358.33333333333331" height="61"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мобильная версия поможет Вам оставаться ВКонтакте, даже если Вы далеко от компьютера." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfa-Hb-1lW">
+                                                <rect key="frame" x="26" y="180" width="338" height="61"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -61,18 +61,20 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="qfa-Hb-1lW" secondAttribute="trailing" constant="26" id="2Zd-Ij-pW1"/>
                                             <constraint firstItem="qfa-Hb-1lW" firstAttribute="top" secondItem="WwU-dr-F62" secondAttribute="bottom" constant="26" id="6n1-tI-Kte"/>
                                             <constraint firstItem="R7P-mY-Hp0" firstAttribute="top" secondItem="xAl-oV-bJR" secondAttribute="bottom" constant="50" id="8bt-0u-7Vg"/>
                                             <constraint firstAttribute="trailing" secondItem="OnA-2D-Vg7" secondAttribute="trailing" constant="24" id="B6a-TE-nE7"/>
-                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qfa-Hb-1lW" secondAttribute="trailing" id="Cca-3w-JdK"/>
                                             <constraint firstItem="xAl-oV-bJR" firstAttribute="leading" secondItem="eod-Gv-gJb" secondAttribute="leading" constant="24" id="FHy-AE-686"/>
-                                            <constraint firstItem="qfa-Hb-1lW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="eod-Gv-gJb" secondAttribute="leading" id="Kua-Ap-6CT"/>
+                                            <constraint firstAttribute="bottom" secondItem="R7P-mY-Hp0" secondAttribute="bottom" constant="56" id="JfM-3f-Dxr"/>
                                             <constraint firstItem="qfa-Hb-1lW" firstAttribute="centerX" secondItem="eod-Gv-gJb" secondAttribute="centerX" id="LVR-BA-QFd"/>
                                             <constraint firstItem="xAl-oV-bJR" firstAttribute="top" secondItem="OnA-2D-Vg7" secondAttribute="bottom" constant="10" id="OXK-SF-seG"/>
                                             <constraint firstAttribute="trailing" secondItem="xAl-oV-bJR" secondAttribute="trailing" constant="24" id="SR3-mM-zy2"/>
                                             <constraint firstItem="xAl-oV-bJR" firstAttribute="trailing" secondItem="OnA-2D-Vg7" secondAttribute="trailing" id="bs5-s7-MpQ"/>
                                             <constraint firstItem="OnA-2D-Vg7" firstAttribute="leading" secondItem="eod-Gv-gJb" secondAttribute="leading" constant="24" id="c4O-q7-cZi"/>
                                             <constraint firstItem="WwU-dr-F62" firstAttribute="centerX" secondItem="eod-Gv-gJb" secondAttribute="centerX" id="cpu-Fz-osA"/>
+                                            <constraint firstItem="qfa-Hb-1lW" firstAttribute="leading" secondItem="eod-Gv-gJb" secondAttribute="leading" constant="26" id="fLh-Oj-ma8"/>
+                                            <constraint firstAttribute="trailing" secondItem="qfa-Hb-1lW" secondAttribute="trailing" constant="26" id="hdS-g2-VkB"/>
                                             <constraint firstItem="xAl-oV-bJR" firstAttribute="leading" secondItem="OnA-2D-Vg7" secondAttribute="leading" id="nVc-0X-dBf"/>
                                             <constraint firstItem="R7P-mY-Hp0" firstAttribute="centerX" secondItem="eod-Gv-gJb" secondAttribute="centerX" id="pEG-6B-NQx"/>
                                             <constraint firstItem="OnA-2D-Vg7" firstAttribute="top" secondItem="qfa-Hb-1lW" secondAttribute="bottom" constant="36" id="pqY-RJ-hTM"/>
@@ -84,7 +86,6 @@
                                     <constraint firstAttribute="trailing" secondItem="eod-Gv-gJb" secondAttribute="trailing" id="8oc-0r-2gk"/>
                                     <constraint firstItem="eod-Gv-gJb" firstAttribute="top" secondItem="Vo4-S1-DSQ" secondAttribute="top" id="c3s-8G-70C"/>
                                     <constraint firstAttribute="bottom" secondItem="eod-Gv-gJb" secondAttribute="bottom" id="knk-q1-yZD"/>
-                                    <constraint firstItem="eod-Gv-gJb" firstAttribute="centerY" secondItem="Vo4-S1-DSQ" secondAttribute="centerY" id="r0t-5g-GHt"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
