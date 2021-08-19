@@ -40,19 +40,31 @@ final class LoginViewController: UIViewController {
 		NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
 		NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
 	}
+	
+	@IBAction func logout(_ segue: UIStoryboard) {
+		loginTexField.text = ""
+		passwordTextField.text = ""
+	}
 
 	
     @IBAction private func loginButtonPassed(_ sender: UIButton) {
-		//получаем логин
 		let loginText = loginTexField.text
-		//получаем пороль
-		let passwordText = passwordTextField.text
-		
-		if loginText == "1" && passwordText == "1" {
-			print("Пароль введен успешно")
-		} else {
-			print("Пароль введен не верно")
-		}
+			//получаем пороль
+			let passwordText = passwordTextField.text
+			
+			if loginText == "123" && passwordText == "123" {
+			} else {
+		  // Создаем контроллер
+		  let alert = UIAlertController(title: "Ошибка", message: "Введены неверные данные пользователя", preferredStyle: .alert)
+		  // Создаем кнопку для UIAlertController
+		  let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+		  // Добавляем кнопку на UIAlertController
+		  alert.addAction(action)
+		  // Показываем UIAlertController
+		  present(alert, animated: true, completion: nil)
+		  
+	  }
+
 		
     }
 	
